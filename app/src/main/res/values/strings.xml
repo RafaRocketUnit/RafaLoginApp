@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Rafa Login App for Baubap</string>
+    <string name="first_fragment_label">Baubap Login</string>
+</resources>
