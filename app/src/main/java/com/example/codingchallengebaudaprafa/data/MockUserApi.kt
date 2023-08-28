@@ -3,12 +3,13 @@ package com.example.codingchallengebaudaprafa.data
 import arrow.core.Either
 import arrow.core.left
 import arrow.core.right
+import javax.inject.Inject
 
 /**
  * @author Rafael Bonilla
  * MockUserApi class to set some Users to login successful, otherwise to return the login error.
  */
-class MockUserApi: UserApi {
+class MockUserApi @Inject constructor(): UserApi {
 
     private val availableUsers = listOf<UserDto>(
         UserDto("rafa", "rafarocket@gmail.com", "1234"),

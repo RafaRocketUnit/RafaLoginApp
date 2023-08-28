@@ -7,12 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.codingchallengebaudaprafa.databinding.LoginViewBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 
 /**
  * @author Rafael Bonilla
  * Login Fragment, main UI container.
  */
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
 
     private var _binding: LoginViewBinding? = null

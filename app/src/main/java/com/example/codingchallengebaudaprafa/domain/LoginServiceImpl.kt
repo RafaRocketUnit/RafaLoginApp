@@ -1,16 +1,16 @@
 package com.example.codingchallengebaudaprafa.domain
 
 import arrow.core.Either
-import com.example.codingchallengebaudaprafa.data.MockUserApi
 import com.example.codingchallengebaudaprafa.data.UserApi
 import com.example.codingchallengebaudaprafa.data.ApiError
 import com.example.codingchallengebaudaprafa.toUser
+import javax.inject.Inject
 
 /**
  * @author Rafael Bonilla
  * Implementation class of login service interface.
  */
-class LoginServiceImpl(private val userApi: UserApi = MockUserApi()): LoginService {
+class LoginServiceImpl @Inject constructor(private val userApi: UserApi): LoginService {
 
     /**
      * Login call from endpoint (userApi)
