@@ -2,13 +2,14 @@ package com.example.codingchallengebaudaprafa.domain
 
 import arrow.core.Either
 import com.example.codingchallengebaudaprafa.data.ApiError
+import javax.inject.Inject
 
 
 /**
  * @author Rafael Bonilla
  * Implementation class of the User Repository, define by the Use Case.
  */
-class MockUserRepositoryImpl(private val loginService: LoginService = LoginServiceImpl()): UserRepository {
+class MockUserRepositoryImpl @Inject constructor(private val loginService: LoginService): UserRepository {
 
     /**
      * Login call on LoginService
